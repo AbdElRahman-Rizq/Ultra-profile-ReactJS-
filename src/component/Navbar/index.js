@@ -8,7 +8,6 @@ import {
   ListItem,
   UlList,
 } from "./style.js";
-import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <Navbarsection>
@@ -21,7 +20,7 @@ const Navbar = () => {
             <LinkTag to="/">Home</LinkTag>
           </ListItem>
           <ListItem>
-            <Anchor>Work</Anchor>
+            <Anchor href="#Work">Work</Anchor>
           </ListItem>
           <ListItem>
             <Anchor>Portfolio</Anchor>
@@ -32,11 +31,10 @@ const Navbar = () => {
           <ListItem>
             <Anchor>About</Anchor>
           </ListItem>
-          <Link to="/contact">
-            <ListItem>
-              <Anchor>Contact</Anchor>
-            </ListItem>
-          </Link>
+          <ListItem>
+            <LinkTag to="/contact">Contact</LinkTag>
+          </ListItem>
+          
         </UlList>
       </div>
     </Navbarsection>

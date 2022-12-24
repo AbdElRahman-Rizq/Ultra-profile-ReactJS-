@@ -8,35 +8,35 @@ background-position: center;
 text-align: center;
 position: relative;
 `
-export const Home_information = styled.div`
+export const HomeInformation = styled.div`
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%)
 `
-export const Home_title = styled.h3`
+export const HomeTitle = styled.h3`
 
     font-size: 60px;
     font-weight: bold;
     color: #5e5e5e;
     margin-bottom: 0px;
 `
-export const Home_info = styled.h4`
+export const HomeInfo = styled.h4`
     font-size: 35px;
     color: #eb5424;
     margin-bottom: 20px;
 `
-export const Home_description = styled.p`
+export const HomeDescription = styled.p`
     font-size: 20px;
     line-height: 1.5;
     color: #888;
     margin-bottom: 20px;
     margin-top:0
 `
-export const Description_span = styled.span`
+export const DescriptionSpan = styled.span`
     color: #000
 `
-export const Home_btn = styled.button`
+export const HomeBtn = styled.button`
     background: #eb5424;
     color: #fff;
     font-size: 18px;
