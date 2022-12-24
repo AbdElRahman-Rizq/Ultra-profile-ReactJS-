@@ -1,22 +1,22 @@
 import React from 'react';
-import"./style.css";
+import{ AboutSection,AboutInfo, AboutTitle, AboutDirector, AboutTitleSpan, AboutDesc, Anchor }from"./style.js";
 function About() {
 
     return (
-        <div class="creative">
+        <AboutSection>
         <div className="container">
-            <div class="creative-info">
-                <h2 class="info-title"><span>This is</span> Me</h2>
-                <h4 class="info-dir">Creative Director</h4>
-                <p class="info-desc">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim est <a href="#">explicabo</a> maxime quibusdam quaerat nihil aliquid aperiam deleniti, repellendus dolorum. Possimus nisi cupiditate ad veritatis?
-                </p>
-                <p class="info-desc">
+            <AboutInfo>
+                <AboutTitle><AboutTitleSpan>This is</AboutTitleSpan> Me</AboutTitle>
+                <AboutDirector>Creative Director</AboutDirector>
+                <AboutDesc>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim est <Anchor href='#'>explicabo</Anchor> maxime quibusdam quaerat nihil aliquid aperiam deleniti, repellendus dolorum. Possimus nisi cupiditate ad veritatis?
+                </AboutDesc>
+                <AboutDesc>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim est explicabo maxime quibusdam quaerat nihil aliquid aperiam deleniti, repellendus dolorum. Possimus nisi cupiditate ad veritatis?
-                </p>
-            </div>
+                </AboutDesc>
+            </AboutInfo>
         </div>
-    </div>
+    </AboutSection>
     );
 
 }
