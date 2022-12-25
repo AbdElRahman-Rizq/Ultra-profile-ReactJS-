@@ -51,7 +51,7 @@ const Profile = () => {
             </ProfileListItem>
             <ProfileListItem>
               <ProfileListSpan>Website</ProfileListSpan>
-              <ProfileListWeb class="web">www.google.com</ProfileListWeb>
+              <ProfileListWeb className="web">www.google.com</ProfileListWeb>
             </ProfileListItem>
           </ProfileList>
         </ProfileSection>
