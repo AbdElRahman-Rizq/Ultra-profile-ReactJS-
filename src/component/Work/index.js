@@ -24,7 +24,7 @@ import {
             <WorkTitle>My Work</WorkTitle>
            {Works && Works.map((WorksItem)=>
         
-        <Part id={WorksItem.id}>
+        <Part key={WorksItem.id} id={WorksItem.id}>
             <Icon className={WorksItem.icon_name}></Icon>
             <PartTitle>{WorksItem.title}</PartTitle>
             <Line/>

@@ -19,7 +19,7 @@ export const Part = styled.div`
   box-sizing: border-box;
   text-align: center;
   margin-left: 5%;
-  margin-left: ${(props) => (props.id === 1 ? "0" : "5%")};
+  margin-left: ${(props) => (props.id=== 1 ? "0" : "5%")};
 `;
 export const Icon = styled.i`
   color: #888;
