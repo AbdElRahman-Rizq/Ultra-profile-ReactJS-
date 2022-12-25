@@ -4,24 +4,17 @@ export const SocialSection=styled.div`
     overflow: hidden;
     width: 100%;
 `
-export const AllSocial=`
+export const AllSocial=styled.div`
     width: 33.33%;
     float: left;
     box-sizing: border-box;
-    padding: 100px 0 100px 60px
+    padding: 100px 0 100px 60px;
+    background:${props=>(props.id===1?"#3b5998":"")};
+    background:${props=>(props.id===2?"#498cbf":"")};
+    background:${props=>(props.id===3?"#cc2127":"")};
+
 `
-export const Facebook=styled.div`
-    background: #3b5998;
-    ${AllSocial}
-`
-export const Twitter=styled.div`
-${AllSocial};
-background: #498cbf;
-`
-export const Pinterest=styled.div`
-background: #cc2127;
-${AllSocial}
-`
+
 export const Icon=styled.i`
     width: 50px;
     height: 50px;
@@ -44,4 +37,3 @@ export const Infospan=styled.span`
     margin-bottom: 8px;
     font-weight:${props=>(props.itemProp==="info2"?"normal":"")}
 `
-

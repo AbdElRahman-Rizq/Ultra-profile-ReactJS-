@@ -1,33 +1,25 @@
-import React from 'react';
-import { Facebook, Icon, Info, Infospan, Pinterest, SocialSection, Twitter } from './style.js';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { AllSocial, Icon, Info, Infospan, SocialSection } from './style.js';
 const SocialMedia=()=> {
-
+    let[Social,SetSocial] =useState([]);
+    useEffect(()=>{
+        axios.get("JS/data.json").then(res=>SetSocial(res.data.social))
+    },[])
     return (
    
         <SocialSection>
-            <Facebook>
-                <Icon className="fa fa-facebook fa-lg"></Icon>
+            {Social&&Social.map((Items)=>
+
+                <AllSocial key={Items.id} id={Items.id}>
+                <Icon className={Items.icon}></Icon>
                 <Info>
-                    <Infospan>Follow Me on</Infospan>
-                    <Infospan itemProp='info2'>Social Facebook</Infospan>
+                    <Infospan>{Items.title}</Infospan>
+                    <Infospan itemProp='info2'>{Items.body}</Infospan>
                 </Info>
-            </Facebook>
+            </AllSocial>
+            )}
             
-            <Twitter>
-                <Icon className="fa fa-twitter fa-lg"></Icon>
-                <Info>
-                    <Infospan>Tweet Me on</Infospan>
-                    <Infospan itemProp='info2'>Social twitter</Infospan>
-                </Info>
-            </Twitter>
-            
-            <Pinterest>
-                <Icon className="fa fa-pinterest fa-lg"></Icon>
-                <Info>
-                    <Infospan>Pin Me on</Infospan>
-                    <Infospan itemProp='info2'>Social Pinterest</Infospan>
-                </Info>
-            </Pinterest>
         </SocialSection>
     );
   
