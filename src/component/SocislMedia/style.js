@@ -11,13 +11,15 @@ export const AllSocial=styled.div`
     padding: 100px 0 100px 60px;
     background:${props=>(props.id===1?"#3b5998":"")};
     background:${props=>(props.id===2?"#498cbf":"")};
-    background:${props=>(props.id===3?"#cc2127":"")};
-
+    background:${props=>(props.id===3?"#0e76a8":"")};
+    @media (max-width: 767px) {
+    padding: 50px 0 50px 60px;
+    width:100%; 
+         }
 `
 
 export const Icon=styled.i`
     width: 50px;
-    height: 50px;
     background: #fff;
     text-align: center;
     line-height: 50px;
@@ -25,6 +27,9 @@ export const Icon=styled.i`
     float: left;
     margin-right: 10px;
     margin-top: 25px;
+    @media (max-width: 767px) {
+        margin-top:0;
+         }
 `
 export const Info=styled.p`
     font-weight: bold;

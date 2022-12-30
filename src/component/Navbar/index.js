@@ -1,40 +1,57 @@
-import React from "react";
+import React,{useCallback, useState}from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {  faBars,faXmark } from "@fortawesome/free-solid-svg-icons";
 import {
   Navbarsection,
   LinkTag,
   Logo,
   LogoText,
-  Anchor,
   ListItem,
   UlList,
+BarIcon,
+CloseIcon,
+BarIConSection,
+LinkRouter
 } from "./style.js";
 const Navbar = () => {
+  const [toggle,setToggle]=useState(false);
+
+  const toggleFun=useCallback(()=>{
+      
+          setToggle(!toggle);
+  },[toggle]);
+   
   return (
     <Navbarsection>
       <div className="container">
         <Logo>
           <LogoText>Ultra Profile</LogoText>
         </Logo>
-        <UlList>
+        
+          <BarIConSection><FontAwesomeIcon icon={faBars} style={BarIcon} className="Icon" onClick={toggleFun}/></BarIConSection>
+        <h3>
+          <FontAwesomeIcon icon={faXmark} style={CloseIcon}/>
+          </h3>
+        
+        <UlList className= {toggle && "active"}>
           <ListItem>
-            <LinkTag to="/">Home</LinkTag>
+            <LinkRouter to="/">Home</LinkRouter>
           </ListItem>
           <ListItem>
-            <Anchor href="#Work">Work</Anchor>
+            <LinkTag  to="Work" smooth={true} spy={true} duration="500">Work</LinkTag>
           </ListItem>
           <ListItem>
-            <Anchor>Portfolio</Anchor>
+            <LinkTag>Portfolio</LinkTag>
           </ListItem>
           <ListItem>
-            <Anchor>Resume</Anchor>
+            <LinkTag>Resume</LinkTag>
           </ListItem>
           <ListItem>
-            <Anchor>About</Anchor>
+            <LinkTag>About</LinkTag>
           </ListItem>
           <ListItem>
-            <LinkTag to="/contact">Contact</LinkTag>
+            <LinkRouter to="contact">Contact</LinkRouter>
           </ListItem>
-          
         </UlList>
       </div>
     </Navbarsection>

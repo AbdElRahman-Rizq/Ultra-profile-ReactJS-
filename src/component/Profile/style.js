@@ -7,6 +7,10 @@ overflow: hidden;
 export const ProfileSection=styled.div`
     width: 50%;
     float: left;
+    @media(max-width: 767px){
+        width:100%;
+        margin-bottom:1.5%
+    }
 `
 export const ProfileList=styled.ul`
     list-style: none
@@ -26,6 +30,10 @@ export const ProfileListWeb=styled.span`
 export const SkillsSection=styled.div`
     width: 50%;
     float: left;
+    @media(max-width: 767px){
+        width:100%;
+        margin-top:5%
+    }
 `
 export const SkillsDesc=styled.div`
     font-size: 15px;

@@ -8,7 +8,14 @@ export const WorkSection = styled.div`
 `;
 export const WorkTitle = styled.h2`
   font-size: 60px;
+  @media(max-width:765px){
+    text-align:center;
+    margin-bottom: 2%;
+  }
 `;
+export const TitleSpan = styled.span`
+font-weight: normal
+`
 export const Part = styled.div`
   margin-top: 20px;
   width: 30%;
@@ -19,7 +26,13 @@ export const Part = styled.div`
   box-sizing: border-box;
   text-align: center;
   margin-left: 5%;
+
+  @media(min-width:765px){
   margin-left: ${(props) => (props.id=== 1 ? "0" : "5%")};
+  }
+  @media(max-width:765px){
+    width: 90%;
+  }
 `;
 export const Icon = styled.i`
   color: #888;

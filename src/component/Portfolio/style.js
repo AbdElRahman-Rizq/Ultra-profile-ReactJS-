@@ -27,6 +27,10 @@ export const ListItem= styled.li`
         background:#eb5424;
         color:#fff;
     }
+    @media (max-width:575px) {
+            display: block;
+            margin: auto
+        }
 `
 export const ImageBox= styled.div`
     width: 25%;
@@ -36,9 +40,15 @@ export const ImageBox= styled.div`
     &:hover > p {
         opacity: 1
         }
+    @media (max-width:575px) {
+    width: 100%;
+}
 `
-export const Img= styled.img`
-    width: 100%
+export const Img= styled.img `
+    width: 100%;
+    @media (max-width:575px) {
+       height:270px
+    }
 `
 export const Overlay= styled.p`
     position: absolute;

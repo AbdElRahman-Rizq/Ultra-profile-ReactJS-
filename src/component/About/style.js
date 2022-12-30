@@ -10,6 +10,10 @@ export const AboutInfo=styled.div`
     padding-top: 50px;
     width: 50%;
     float: right;
+    @media(max-width: 767px){
+        width:100%;
+        padding-top:10%
+    }
 `
 export const AboutTitle=styled.h2`
     font-weight: bold;

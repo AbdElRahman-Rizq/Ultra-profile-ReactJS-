@@ -7,7 +7,8 @@ import {
     WorkTitle,
     WorkSection,
     Icon,
-    Line
+    Line,
+    TitleSpan
     
  } from "./style.js";
  const Work=()=> {
@@ -21,7 +22,7 @@ import {
     return (
         <WorkSection id='Work'>
         <div className="container">
-            <WorkTitle>My Work</WorkTitle>
+            <WorkTitle><TitleSpan>My</TitleSpan> Work</WorkTitle>
            {Works && Works.map((WorksItem)=>
         
         <Part key={WorksItem.id} id={WorksItem.id}>
