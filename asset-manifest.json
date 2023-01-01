@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Ultra-profile-ReactJS-/static/css/main.a88cd18e.css",
+    "main.js": "/Ultra-profile-ReactJS-/static/js/main.a0381823.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Ultra-profile-ReactJS-/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/Ultra-profile-ReactJS-/index.html",
+    "main.a88cd18e.css.map": "/Ultra-profile-ReactJS-/static/css/main.a88cd18e.css.map",
+    "main.a0381823.js.map": "/Ultra-profile-ReactJS-/static/js/main.a0381823.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Ultra-profile-ReactJS-/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a88cd18e.css",
+    "static/js/main.a0381823.js"
+  ]
+}
