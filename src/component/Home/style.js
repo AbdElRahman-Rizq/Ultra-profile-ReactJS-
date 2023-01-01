@@ -8,6 +8,9 @@ background-attachment: fixed;
 background-position: center center;
 text-align: center;
 position: relative;
+@media (max-width: 765px) {
+    background-attachment: unset;
+     }
 `
 export const HomeInformation = styled.div`
     position: absolute;
