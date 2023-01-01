@@ -10,7 +10,7 @@ import {
 } from "./style.js";
 const Home=()=> {
     return (
-    <HomeTag>
+    <HomeTag id="Home">
         <div className="container">
                 <HomeInformation>
                     <HomeTitle>AbdEl-Rahman Rizq</HomeTitle>
@@ -19,7 +19,7 @@ const Home=()=> {
                         I'm a professional <DescriptionSpan>UI Designer</DescriptionSpan> and <DescriptionSpan>Front-End Developer</DescriptionSpan> creating modern and responsive designs to Web and Mobile.
                         <br/> Let us work together. Thank you. 
                     </HomeDescription>
-                    <HomeBtn>Let's Begin</HomeBtn>
+                    <HomeBtn type='button' href="#Work">Let's Begin</HomeBtn>
                 </HomeInformation>
             </div>
     </HomeTag>

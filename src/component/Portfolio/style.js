@@ -6,26 +6,28 @@ overflow: hidden;
 `
 export const Title= styled.div`
     text-align: center;
-    font-size: 35px
+    font-size: 35px;
 `
 export const TitleSpan= styled.span`
     font-weight: normal
-`
-export const List= styled.ul`
+    `
+    export const List= styled.ul`
     list-style: none;
     text-align: center;
     margin: 20px 0;
-    cursor:pointer
-`
-export const ListItem= styled.li`
+    .active{
+        background:#eb5424;
+        color:#fff
+    }
+    `
+    export const ListItem= styled.li`
+    cursor:pointer;
     display: inline-block;
     width: 100px;
     padding: 10px;
-    background:${(props) => (props.active? "#eb5424" : "")};
-    color:${props=>props.active? '#fff' :""};
     &:hover{
-        background:#eb5424;
-        color:#fff;
+        background:#fff;
+        color:#eb5424;
     }
     @media (max-width:575px) {
             display: block;
@@ -46,6 +48,7 @@ export const ImageBox= styled.div`
 `
 export const Img= styled.img `
     width: 100%;
+    height:300px;
     @media (max-width:575px) {
        height:270px
     }

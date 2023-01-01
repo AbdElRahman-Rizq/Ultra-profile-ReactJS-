@@ -22,7 +22,7 @@ import {
 } from "./style.js";
 const Profile = () => {
   return (
-    <ProfileSkillsSection>
+    <ProfileSkillsSection id="Profile">
       <div className="container">
         <ProfileSection>
           <ProfileTitle>
@@ -31,27 +31,27 @@ const Profile = () => {
           <ProfileList>
             <ProfileListItem>
               <ProfileListSpan>Name</ProfileListSpan>
-              Hamza Nabil
+              AbdEl-Rahman Rizq
             </ProfileListItem>
             <ProfileListItem>
               <ProfileListSpan>Birthday</ProfileListSpan>
-              21/1/1996
+              28/03/1999
             </ProfileListItem>
             <ProfileListItem>
               <ProfileListSpan>Address</ProfileListSpan>
-              Ain shams
+              El-Qanater EL-Khairia
             </ProfileListItem>
             <ProfileListItem>
               <ProfileListSpan>Phone</ProfileListSpan>
-              4444 5555 6666
+             01145812766
             </ProfileListItem>
             <ProfileListItem>
               <ProfileListSpan>Email</ProfileListSpan>
-              hamza@hamza.com
+              a.rezk453@gmail.com
             </ProfileListItem>
             <ProfileListItem>
-              <ProfileListSpan>Website</ProfileListSpan>
-              <ProfileListWeb className="web">www.google.com</ProfileListWeb>
+              <ProfileListSpan>github</ProfileListSpan>
+              <ProfileListWeb >https://github.com/AbdElRahman-Rizq</ProfileListWeb>
             </ProfileListItem>
           </ProfileList>
         </ProfileSection>
@@ -65,8 +65,8 @@ const Profile = () => {
             praesentium blanditiis esse cupiditate, omnis similique.
           </SkillsDesc>
           <SkillsBar>
-            <BarTitle>Bootstrap</BarTitle>
-            <BarPerc>100%</BarPerc>
+            <BarTitle>HTML5</BarTitle>
+            <BarPerc>90%</BarPerc>
             <BarParent>
               <BarParentSpan1></BarParentSpan1>
             </BarParent>
@@ -81,7 +81,7 @@ const Profile = () => {
           </SkillsBar>
 
           <SkillsBar>
-            <BarTitle>Photoshop</BarTitle>
+            <BarTitle>ReactJS</BarTitle>
             <BarPerc>80%</BarPerc>
             <BarParent>
               <BarParentSpan3></BarParentSpan3>

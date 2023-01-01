@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Navbarsection = styled.div`
-  padding: 5px 0;
+  padding: 10px 0;
   overflow: hidden;
   background: #fff;
   position: fixed;
+  margin-bottom: 10px;
   top:0;
   width:100%;
   border-bottom: 1px solid #000;
@@ -15,10 +16,11 @@ export const Navbarsection = styled.div`
     display: block;
   }
 `;
-export const Logo = styled.div`
+export const Logo = styled(Link)`
   width: 50%;
   float: left;
-  padding-top: 1%;
+  color: #222;
+  padding-top:.5%;
   @media (max-width: 1024px) {
     width: 35%;
   }
@@ -54,16 +56,14 @@ margin-top:3%;
 margin-right:0
 }
 `
-export const CloseIcon ={
-    display:'none',
-    fontSize:"30px"
-}
+
     export const BarIcon ={
         fontSize:"30px",
     // width:'100%'
 }
 
 export const UlList = styled.ul`
+font-size:1.1rem;
   float: left;
   padding: 0;
   width: 50%;

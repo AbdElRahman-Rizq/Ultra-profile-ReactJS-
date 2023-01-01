@@ -10,8 +10,8 @@ export const AllSocial=styled.div`
     box-sizing: border-box;
     padding: 100px 0 100px 60px;
     background:${props=>(props.id===1?"#3b5998":"")};
-    background:${props=>(props.id===2?"#498cbf":"")};
-    background:${props=>(props.id===3?"#0e76a8":"")};
+    background:${props=>(props.id===2?"#0e76a8":"")};
+    background:${props=>(props.id===3?"#498cbf":"")};
     @media (max-width: 767px) {
     padding: 50px 0 50px 60px;
     width:100%; 
@@ -26,7 +26,8 @@ export const Icon=styled.i`
     color: #888;
     float: left;
     margin-right: 10px;
-    margin-top: 25px;
+    margin-top: 5px;
+    cursor:pointer;
     @media (max-width: 767px) {
         margin-top:0;
          }

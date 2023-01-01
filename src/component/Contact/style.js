@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const ContactSection=styled.div`
-padding: 50px 0;
+padding: 85px 0;
 text-align: center
 `
 export const ContactTitle=styled.h2`

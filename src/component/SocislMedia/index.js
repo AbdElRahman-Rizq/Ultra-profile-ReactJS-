@@ -8,11 +8,11 @@ const SocialMedia=()=> {
     },[])
     return (
    
-        <SocialSection>
+        <SocialSection id='SocialMedia'>
             {Social&&Social.map((Items)=>
 
                 <AllSocial key={Items.id} id={Items.id}>
-                <Icon className={Items.icon}></Icon>
+               <a href={Items.link}> <Icon className={Items.icon}></Icon></a>
                 <Info>
                     <Infospan>{Items.title}</Infospan>
                     <Infospan itemProp='info2'>{Items.body}</Infospan>

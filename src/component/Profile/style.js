@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ProfileSkillsSection=styled.div`
 padding: 50px 0;
 overflow: hidden;
+background-color:rgba(136, 136, 136, 0.205);
 `
 export const ProfileSection=styled.div`
     width: 50%;
@@ -16,15 +17,16 @@ export const ProfileList=styled.ul`
     list-style: none
 `
 export const ProfileListItem=styled.li`
-    margin-bottom: 8px
+    margin-bottom: 15px
 `
 export const ProfileListSpan=styled.span`
     display: inline-block;
-    width: 100px;
+    width: 70px;
     font-weight: bold
 `
 export const ProfileListWeb=styled.span`
     font-weight: normal;
+    width: 110px;
     color: #eb5424
 `
 export const SkillsSection=styled.div`
@@ -39,7 +41,7 @@ export const SkillsDesc=styled.div`
     font-size: 15px;
     color: #888;
     line-height: 1.5;
-    margin-bottom: 20px
+    margin-bottom: 10px
 `
 export const SkillsBar=styled.div`
     overflow: hidden;
@@ -58,7 +60,8 @@ export const BarParent=styled.div`
     clear: both;
     background: #f8f8f8;
     position: relative;
-    top: 5px
+    top: 5px;
+    padding:0.2%
 `
  const BarParentSpan=`
  background: #eb5424;
@@ -66,17 +69,17 @@ export const BarParent=styled.div`
  display: block;
  top: 0;
  left: 0;
- bottom: 0
+ bottom: 0;
  `
     
 
 export const BarParentSpan1=styled.span`
-    width: 100%;
+    width: 90%;
    ${BarParentSpan}
 `
 export const BarParentSpan2=styled.span`
+${BarParentSpan};
     width: 90%;
-    ${BarParentSpan}
 `
 export const BarParentSpan3=styled.span`
     width: 80%;

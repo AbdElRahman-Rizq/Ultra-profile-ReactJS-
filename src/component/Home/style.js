@@ -8,7 +8,6 @@ background-attachment: fixed;
 background-position: center center;
 text-align: center;
 position: relative;
-
 `
 export const HomeInformation = styled.div`
     position: absolute;
@@ -16,7 +15,7 @@ export const HomeInformation = styled.div`
     left: 50%;
     transform: translate(-50%,-50%);
     @media (max-width: 765px) {
-    top: 54%;
+    top: 65%;
     width:90%;
      }
 `
@@ -74,13 +73,13 @@ export const HomeDescription = styled.p`
 export const DescriptionSpan = styled.span`
     color: #000
 `
-export const HomeBtn = styled.button`
+export const HomeBtn = styled.a`
     background: #eb5424;
     color: #fff;
     font-size: 18px;
     width: 150px;
     border: 0;
-    padding: 15px;
+    padding: 15px 20px;
     cursor: pointer;
     font-weight: bold;
     &:hover { 

@@ -4,7 +4,7 @@ const Footer=()=> {
 
     return (
         <div className="footer">
-        <p> copyright &copy; 2022 by ultra profile </p>
+        <p> copyright &copy; 2022 by عبدالرحمَــن رزق </p>
     </div>
    
     );
