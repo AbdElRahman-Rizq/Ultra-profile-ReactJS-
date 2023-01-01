@@ -1,0 +1,110 @@
+{
+    "works" : [
+        {
+            "id" : 1,
+            "icon_name": "icon fa fa-chain fa-2x",
+            "title": "Mobile Ux",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quos omnis voluptas ea ipsam! Voluptas."
+        },
+        {
+            "id" : 2,
+            "icon_name": "icon fa fa-bolt fa-2x",
+            "title": "Mobile Ux",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quos omnis voluptas ea ipsam! Voluptas."
+        },
+        {
+            "id" : 3,
+            "icon_name": "icon fa fa-tachometer fa-2x",
+            "title": "Mobile Ux",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quos omnis voluptas ea ipsam! Voluptas."
+        }
+    ],
+
+    "portfolio" : [
+        {
+            "id":1,
+            "class":"Two",
+            "image": "/images/portfolio-img1.jpg"
+        },
+        {
+            "id":2,
+            "class":"Four",
+            "image": "/images/portfolio-img2.jpg"
+        },
+        {
+            "id":3,
+            "class":"One",
+            "image": "/images/portfolio-img3.jpg"
+        },
+        {
+            "id":4,
+            "class":"One",
+            "image": "/images/portfolio-img4.jpg"
+        },
+        {
+            "id":5,
+            "class":"Four",
+            "image": "/images/portfolio-img5.jpg"
+        },
+        {
+            "id":6,
+            "class":"Two",
+            "image": "/images/portfolio-img6.jpg"
+        },
+        {
+            "id":7,
+            "class":"Two",
+            "image": "/images/portfolio-img4.jpg"
+        },
+        {
+            "id":8,
+            "class":"Three",
+            "image": "/images/portfolio-img8.jpg"
+        },
+        {           
+            "id":11,
+            "class":"One",
+            "image": "/images/portfolio-img3.jpg"
+        },
+        {
+            "id":10,
+            "class":"Four",
+            "image": "/images/portfolio-img9.jpg"
+        },
+        {
+            "id":9,
+            "class":"Two",
+            "image": "/images/portfolio-img1.jpg"
+        },
+        {
+            "id":12,
+            "class":"Three",
+            "image": "/images/portfolio-img4.jpg"
+        }
+        
+    ] ,
+    "social" : [
+        {
+            "id": 1,
+            "icon" : "fa fa-facebook fa-lg",
+            "title" : "Follow Me on",
+            "body" : "Facebook",
+            "link":"https://www.facebook.com/a.rezk453"
+        },
+        {
+            "id": 2,
+           
+            "icon" : "fa fa-linkedin fa-lg",
+            "title" : "Pin Me on",
+            "body" : "Linkedin",
+            "link":"https://www.linkedin.com/in/abdel-rahman-rizq/"
+        },
+        {
+            "id": 3,
+            "icon" : "fa fa-twitter fa-lg",
+            "title" : "Tweet Me on",
+            "body" : "Twitter",
+            "link":"https://twitter.com/RsK283"
+        }
+    ] 
+}
