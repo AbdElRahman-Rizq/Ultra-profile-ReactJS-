@@ -15,7 +15,7 @@ import {
         let[Works,setWorks]=useState([])
     
  useEffect(()=> {
-     axios.get('JS/data.json').then(res=>setWorks(res.data.works))
+     axios.get('./JS/data.json').then(res=>{setWorks(res.data.works)})
     },[])
 
     

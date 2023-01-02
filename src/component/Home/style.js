@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HomeTag = styled.div`
 height: 500px;
-background: url("Images/home-bg.jpg");
+background: url("images/home-bg.jpg");
 background-size: cover;
 background-attachment: fixed;
 background-position: center center;
